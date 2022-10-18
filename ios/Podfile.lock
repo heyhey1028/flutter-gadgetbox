@@ -1,13 +1,6 @@
 PODS:
-  - cloud_firestore (3.5.1):
-    - Firebase/Firestore (= 9.6.0)
-    - firebase_core
-    - Flutter
   - Firebase/CoreOnly (9.6.0):
     - FirebaseCore (= 9.6.0)
-  - Firebase/Firestore (9.6.0):
-    - Firebase/CoreOnly
-    - FirebaseFirestore (~> 9.6.0)
   - firebase_core (1.24.0):
     - Firebase/CoreOnly (= 9.6.0)
     - Flutter
@@ -41,6 +34,8 @@ PODS:
   - GoogleUtilities/Logger (7.8.0):
     - GoogleUtilities/Environment
   - "GoogleUtilities/NSData+zlib (7.8.0)"
+  - image_picker_ios (0.0.1):
+    - Flutter
   - nanopb (2.30909.0):
     - nanopb/decode (= 2.30909.0)
     - nanopb/encode (= 2.30909.0)
@@ -49,10 +44,10 @@ PODS:
   - PromisesObjC (2.1.1)
 
 DEPENDENCIES:
-  - cloud_firestore (from `.symlinks/plugins/cloud_firestore/ios`)
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
   - FirebaseFirestore (from `https://github.com/invertase/firestore-ios-sdk-frameworks.git`, tag `9.6.0`)
   - Flutter (from `Flutter`)
+  - image_picker_ios (from `.symlinks/plugins/image_picker_ios/ios`)
 
 SPEC REPOS:
   trunk:
@@ -66,8 +61,6 @@ SPEC REPOS:
     - PromisesObjC
 
 EXTERNAL SOURCES:
-  cloud_firestore:
-    :path: ".symlinks/plugins/cloud_firestore/ios"
   firebase_core:
     :path: ".symlinks/plugins/firebase_core/ios"
   FirebaseFirestore:
@@ -75,6 +68,8 @@ EXTERNAL SOURCES:
     :tag: 9.6.0
   Flutter:
     :path: Flutter
+  image_picker_ios:
+    :path: ".symlinks/plugins/image_picker_ios/ios"
 
 CHECKOUT OPTIONS:
   FirebaseFirestore:
@@ -82,7 +77,6 @@ CHECKOUT OPTIONS:
     :tag: 9.6.0
 
 SPEC CHECKSUMS:
-  cloud_firestore: 49d69be2b924677f2974d8b38acc705c9908c09b
   Firebase: 5ae8b7cf8efce559a653aef0ad95bab3f427c351
   firebase_core: 7c28ecc1e5dd74e03829ac3e9ff5ba3314e737a9
   FirebaseCore: 2082fffcd855f95f883c0a1641133eb9bbe76d40
@@ -92,9 +86,10 @@ SPEC CHECKSUMS:
   Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
   GoogleDataTransport: 1c8145da7117bd68bbbed00cf304edb6a24de00f
   GoogleUtilities: 1d20a6ad97ef46f67bbdec158ce00563a671ebb7
+  image_picker_ios: b786a5dcf033a8336a657191401bfdf12017dabb
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
 
-PODFILE CHECKSUM: 02e4e3d4368e5dbf1a12b1759abae9dc23235ddc
+PODFILE CHECKSUM: 57779e617f579c663b7c169d70821b905034f75b
 
 COCOAPODS: 1.11.3

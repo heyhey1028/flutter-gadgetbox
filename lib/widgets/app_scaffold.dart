@@ -8,6 +8,7 @@ class AppScaffold extends StatelessWidget {
     this.floatingActionButton,
     this.title,
     this.color = Colors.blue,
+    this.floatingActionButtonLocation,
   });
 
   final Widget body;
@@ -15,6 +16,7 @@ class AppScaffold extends StatelessWidget {
   final Widget? title;
   final MaterialColor color;
   final _scaffoldKey = GlobalKey<ScaffoldState>();
+  final FloatingActionButtonLocation? floatingActionButtonLocation;
 
   @override
   Widget build(BuildContext context) {
@@ -45,6 +47,7 @@ class AppScaffold extends StatelessWidget {
         ),
         child: body,
       ),
+      floatingActionButtonLocation: floatingActionButtonLocation,
       floatingActionButton: floatingActionButton,
     );
   }
