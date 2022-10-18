@@ -25,7 +25,7 @@ class MainDrawer extends StatelessWidget {
                   const SizedBox(
                     height: 16,
                   ),
-                  const Text('FLUTTER TOY BOX'),
+                  const Text('FLUTTER GADGETS'),
                 ],
               ),
             ),

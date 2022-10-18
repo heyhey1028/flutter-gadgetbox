@@ -48,7 +48,8 @@ class MyHomePage extends StatelessWidget {
                   ],
                 ),
               ),
-              child: const Center(child: Text('Welcome to flutter-gadgetbox')),
+              child: const Center(
+                  child: Text('Welcome to flutter gadgets with ML Kit')),
             ),
           ),
         ],
